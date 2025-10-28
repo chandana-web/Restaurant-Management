@@ -46,8 +46,8 @@ app.use(cors({
   origin: [
     "http://localhost:3000",
     "http://localhost:3001",
-    "https://restaurant-management-67vp.vercel.app/",
-    "https://vercel.com/sri-chandanas-projects/restaurant-management"
+    "https://restaurant-management-ochre-mu.vercel.app/",
+    "https://restaurant-management-67vp.vercel.app/"
   ],
   credentials: true,
 }
