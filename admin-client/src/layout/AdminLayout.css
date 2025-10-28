@@ -1,0 +1,22 @@
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #F0F5F3;
+  font-family: "Inter", sans-serif;
+}
+
+.layout-bg {
+  margin-left: 0;
+  width: calc(100% - 90px);
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 0 10px 10px;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+
+

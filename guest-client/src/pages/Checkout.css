@@ -1,0 +1,284 @@
+.checkout-container {
+  max-width: 420px;
+  margin: auto;
+  padding: 0 1rem ;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.cart-items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 200px;
+    scrollbar-width: none; 
+  -ms-overflow-style: none;
+
+}
+
+.section-divider {
+  border-top: 1px solid #e0e0e0;
+  
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  background: #f6f6f6;
+  border-radius: 12px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.cart-item img {
+  width: 160px;
+  height: 140px;
+  border-radius: 10px;
+  
+  
+}
+
+.cart-info {
+  flex: 1;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-info h4 {
+  margin: 0;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.quantity button {
+  border: none;
+  background: #eee;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.price-summary p, .price-summary h3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+  font-size: 15px;
+  
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+  background: #D9D9D9;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.search-bar1{
+    width: 90%;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 10px;
+  background: #F0F5F3;
+  outline: none;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.1);;
+  margin-bottom: 5px;
+}
+
+.toggle button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px ;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+
+}
+
+.toggle .active {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.address-box {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.price-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    height: 130px;
+    padding: 10px;
+  
+  background: #fff8e6;
+  
+  
+}
+
+
+
+.instruction-trigger {
+  font-size: 0.85rem;
+  color: #777;
+  background: #f9f9f9;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 6px;
+  border: 1px solid #eee;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+}
+
+.quantity-controls button {
+  border: none;
+  background: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.modal-box {
+  background: #F0F5F3;
+  width: 100%;
+  height: 50%;
+  padding: 10px ;
+  border-radius: 20px 20px 0 0;
+  animation: slideUp 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-btn {
+  position: absolute;
+  align-items: center;
+  top: 300px;
+  background: #000;
+  color: #D9D9D9;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+   box-shadow: 0 2px 5px 10px rgba(0,0,0,0.1);
+   
+  
+
+
+}
+
+.modal-box textarea {
+  width: 100%;
+  height: 80px;
+  border: 10px solid #FFF;
+  border-radius: 8px;
+  /* padding: 8px; */
+  height: 30%;
+  width: 100%;
+  right: 5px;
+  resize: none;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  background-color: #F0F5F3;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  
+}
+
+.modal-actions {
+bottom: 0;
+background: white;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+width: 100%;
+height: 30%;
+  
+  align-items: center;
+}
+.cancel-btn, .next-btn1{
+    flex: 1;
+    height: 70%;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+    
+}
+
+
+.location{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.location img{
+    height: 15px;
+    
+}
+
+.dtime{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dtime img{
+    height: 15px;
+    
+}
+.userHeading{
+    font-weight: 600;
+}
+
+
+
+.cancel-btn { background: #f3f3f3; }
+.next-btn1 { background: #000; color: #fff; }
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+

@@ -1,0 +1,47 @@
+.chef-table-container {
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  width: 100%;
+  height: 200px; /* fits neatly into your dashboard */
+}
+
+.chef-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  color: #333;
+  
+}
+
+.chef-table thead {
+  background-color: #DDDDDD;
+}
+
+.chef-table th,
+.chef-table td {
+  text-align: left;
+  padding: 5px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.chef-table th {
+  font-weight: 600;
+  color: #444;
+}
+
+.chef-table td {
+  font-weight: 500;
+}
+
+.chef-table tr:last-child td {
+  border-bottom: none;
+}
+
+.chef-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+

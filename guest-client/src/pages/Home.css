@@ -1,0 +1,282 @@
+body {
+  background-color: #F5F5F5;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  margin: 0;
+  overflow: hidden; /* Prevent full-page scroll */
+
+  padding: 0 5px ;
+  
+}
+
+.home-container {
+  max-width: 420px;
+  height: 90vh;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Fixed header area */
+.home-header {
+  flex-shrink: 0;
+}
+
+.subtitle {
+  color: gray;
+  margin-top: -8px;
+}
+
+/* Search bar */
+.search-bar {
+  width: 87%;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #F0F5F3;
+  outline: none;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.1);;
+  margin-bottom: 5px;
+  
+}
+
+
+
+/* Horizontally scrollable categories */
+.category-tabs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none; /* Hide scrollbar (Firefox) */
+}
+.category-tabs::-webkit-scrollbar {
+  display: none; /* Hide scrollbar (Chrome/Safari) */
+}
+
+.category {
+  text-align: center;
+  flex: 0 0 auto; /* Prevent shrink */
+  width: 60px;
+}
+
+.category img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  background: white;
+  border: 1px solid gray ;
+  color: #000;
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.category p {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* Scrollable menu area */
+.menu-scroll {
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: none;
+  
+  
+  
+}
+.menu-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Menu grid inside scroll */
+.section-title {
+  margin: 0.5rem 0 0.5rem;
+  font-weight: 600;
+  font-size: 30px;
+  color: #2F2F2F;
+
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding-bottom: 40px; 
+  
+
+}
+
+.menu-card {
+  background: #D9D9D9;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+.menu-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 6px 10px  rgba(255, 255, 255, 0);
+}
+
+.card-info {
+  padding: 0.5rem;
+  font-size: 18px;
+  background: #D9D9D9;
+  /* box-shadow: 0 6px 10px 5px white; */
+ 
+  
+}
+
+.add-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: transparent;
+  color: #000;
+  border: none;
+  
+ 
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
+/* Fixed footer button */
+.next-btn {
+  position: fixed;
+  bottom: 22px;
+  left: 260px;
+  /* transform: translateX(-50%); */
+  width: 30%;
+  max-width: 350px;
+  padding: 0.7rem;
+  background: #505050;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 500;
+  z-index: 5;
+}
+
+
+/* Overlay Form */
+/* Overlay Form */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.form-box {
+  background: transparent;
+  border-radius: 20px;
+  padding: 1rem 1.2rem;
+  width: 85%;
+  max-width: 330px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.form-box h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-box label {
+  font-size: 13px;
+  text-align: left;
+  margin-left: 6px;
+  color: #000000;
+}
+
+.form-box input {
+  border: none;
+  background: #F4F2F2;
+  padding: 0.6rem;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.order-btn {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 10px;
+  background: #000;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 30%;
+  margin-left: 115px ;
+}
+
+.order-btn:hover {
+  background: #333;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 18px;
+  opacity: 0.6;
+}
+
+.search-bar {
+  padding-left: 35px; /* space for icon */
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border-radius: 8px;
+  padding: 5px 8px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 80px;
+}
+
+.qty-controls button {
+  border: none;
+  background: #e3e3e3;
+  border-radius: 8px;
+  padding: 3px 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+

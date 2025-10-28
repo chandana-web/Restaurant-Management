@@ -1,0 +1,221 @@
+.orderline-page {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 190vh;
+  height: 520px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.orderline-title {
+  color: #565656;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* Grid layout */
+.orderline-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  overflow-y: auto;
+  padding: 10px;
+   scrollbar-width: none; 
+  -ms-overflow-style: none;
+  
+}
+
+.orderline-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Common card base */
+.order-card {
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+/* Header */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  height: 80px;
+}
+
+.order-left {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.order-icon {
+  height: 20px;
+  margin-top: 2px;
+}
+
+.order-id {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.order-table,
+.order-time {
+  font-size: 12px;
+  color: #555;
+ 
+  
+}
+
+
+
+.order-type {
+  text-align: center;
+  padding: 5px 12px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 12px;
+  height: 45px;
+}
+
+.order-type p {
+  margin-top: 1px;
+  font-weight: 600;
+}
+
+.order-type span {
+  display: block;
+  font-size: 11px;
+}
+
+/* Processing color theme */
+.processing-card {
+  background-color: #ffe4bb;
+  
+}
+
+.processing-type {
+  background-color: #FFE3BC;
+  
+}
+
+.processing-type p{
+  color: #D87300;
+}
+.processing-type span{
+  color: #000;
+}
+
+.processing-btn {
+  background-color: #f7b267;
+  color: #D87300;
+
+}
+
+/* Done color theme */
+.done-card {
+  background-color: #a4f7b5;
+  
+}
+
+.done-type {
+  background-color: #B9F8C9;
+  color: #000;
+  padding: 5px 20px;
+ 
+  
+}
+
+.done-type p{
+    color: #34C759;
+    margin-top: 1px;
+    
+    
+}
+
+.done-btn {
+  background-color: #63db83;
+}
+
+/* Items */
+.order-items-count {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 0;
+
+}
+
+.order-items-box {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 13px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
+  margin-top: 15px;
+  height: 150px;
+}
+
+.order-items-box p {
+  margin: 3px 0;
+  line-height: 20px;
+}
+
+/* Footer button */
+.order-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.order-btn {
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 6px 14px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* ---------- GRAY CARD (Take Away Done) ---------- */
+.gray-card {
+  background-color: #dce3e6;
+  border: 1px solid #C2D4D9;
+}
+
+.gray-type {
+  background-color: #C2D4D9;
+  color: #fff;
+
+}
+.gray-type span{
+  color: #000;
+}
+
+.gray-type p{
+  color: #3181A3;
+  font-size: 12px;
+}
+
+
+.gray-btn {
+  background-color: #9BAEB3;
+  color: #3B413D;
+}
+
+

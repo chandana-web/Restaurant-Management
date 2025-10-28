@@ -1,0 +1,81 @@
+
+.admin-sidebar {
+  width: 45px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 1px solid #e5e5e5;
+  border-radius: 50px;
+  padding: 30px 0 5px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  left: 20px;
+  top: 60px;
+  bottom: 5px;
+}
+
+.logo-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 45px;
+    width: 45px;
+}
+.logo-circle img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+/* Top icons section */
+.admin-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 0;
+}
+
+
+
+/* Icon buttons */
+.admin-sidebar nav a {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #f2f6f4; /* subtle grey background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.admin-sidebar nav a:hover {
+  background: #e8efec;
+  transform: scale(1.05);
+}
+
+.admin-sidebar nav a.active {
+  background: #dfe8e3;
+}
+
+.admin-sidebar img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Bottom circle at the end */
+.sidebar-footer {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #f2f6f4;
+  margin-bottom: 0;
+}
+

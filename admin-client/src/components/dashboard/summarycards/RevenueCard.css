@@ -1,0 +1,63 @@
+.revenue-card {
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+}
+.line{
+  width: 355px;
+  height: 2px;
+  background-color: #D9D9D9;
+}
+
+.revenue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+
+.revenue-header h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6E6E6E;
+}
+
+.revenue-filter {
+  background: #FFFFFF;
+  color: #D9D9D9;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.revenue-chart {
+  width: 320px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #efefef;
+}
+
+.recharts-tooltip-wrapper {
+  background: #fff !important;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
