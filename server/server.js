@@ -46,8 +46,8 @@ app.use(cors({
   origin: [
     "http://localhost:3000",
     "http://localhost:3001",
-    "https://restaurant-management-ochre-mu.vercel.app/",
-    "https://restaurant-management-67vp.vercel.app/"
+    "https://restaurant-management-ochre-mu.vercel.app",
+    "https://restaurant-management-67vp.vercel.app"
   ],
   credentials: true,
 }
@@ -55,7 +55,7 @@ app.use(cors({
 ));
 
 // Static folder to serve uploaded images
-app.use("/uploads", express.static(path.resolve(__dirname, "/uploads")));
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // Upload route
 app.use("/api/upload", uploadRoutes);
