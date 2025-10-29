@@ -46,7 +46,8 @@ app.use(cors({
   origin: [
     "http://localhost:3000",
     "http://localhost:3001",
-    /\.vercel\.app$/  // ✅ Allow all Vercel frontend URLs (both preview + production)
+    /\.vercel\.app$/, // ✅ allows all Vercel preview & production URLs dynamically
+    /\.onrender\.com$/ // ✅ also allow requests from Render frontends if any
   ],
   credentials: true,
 }
