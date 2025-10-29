@@ -46,9 +46,7 @@ app.use(cors({
   origin: [
     "http://localhost:3000",
     "http://localhost:3001",
-    "https://restaurant-management-ochre-mu.vercel.app",
-    "https://restaurant-management-67vp.vercel.app",
-    "https://restaurant-management-do4981mbg-sri-chandanas-projects.vercel.app"
+    /\.vercel\.app$/  // ✅ Allow all Vercel frontend URLs (both preview + production)
   ],
   credentials: true,
 }
